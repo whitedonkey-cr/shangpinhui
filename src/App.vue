@@ -14,6 +14,9 @@ import Footer from './components/Footer'
 export default {
   name: 'App',
   components: { Header, Footer },
+  methods: {
+    
+  },
   mounted() {
     // 通知vuex发送请求，且请求在全局只发送一次 然后将数据存放在仓库中
     this.$store.dispatch('categoryList')
